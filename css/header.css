@@ -1,0 +1,250 @@
+/* sidebar menu css */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-custom {
+  width: 100vw;
+}
+
+.overlay-content {
+  position: relative;
+  width: 224;
+  background-color: #282828;
+  height: 125vh;
+}
+
+.overlay a,
+.dropdown-btn {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* dropbox element hover color */
+.overlay .dropdown-container a:hover,
+.overlay .dropdown-container:focus {
+  color: #f1f1f1;
+}
+
+/* overall dropbox style */
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+}
+
+.dropdown-container a,
+.dropdown:hover {
+  display: block;
+}
+
+.dropdown-custom {
+  display: block;
+}
+
+/* top navigation menu */
+.header {
+  overflow: hidden;
+  background-color: #191919;
+  position: relative;
+}
+.header-hide {
+  display: none;
+}
+/* general link color and style */
+.header-hide a {
+  text-decoration: none;
+  display: block;
+  border: none;
+  background: none;
+}
+
+.dropdown-btn {
+  color: white;
+  padding: 14px 16px;
+
+  text-decoration: none;
+  display: block;
+  border: none;
+  background: none;
+}
+
+.header .dropdown-container a {
+  color: gray;
+}
+
+.icon-menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  color: white;
+  padding: 14px 16px;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  background: none;
+}
+
+.header button.icon-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  padding: 14px 16px;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  background: none;
+}
+
+.active {
+  background-color: #191919;
+  color: white;
+  text-decoration: none;
+}
+
+.header-margin {
+  margin: 10px 0 15px 0;
+}
+
+.header-search {
+  text-align: center;
+}
+.header-search-input {
+  background-color: transparent;
+  border-style: solid none solid solid;
+  border-width: 1px;
+  width: 66vw;
+  height: 30px;
+  color: white;
+}
+
+.header-search-button {
+  background-color: transparent;
+  color: white;
+  border-style: solid solid solid none;
+  border-width: 1px;
+  height: 34px;
+  font-size: 20px;
+}
+
+.header-search-form {
+  display: inline-flex;
+  width: 67vw;
+  display: none;
+}
+
+.logo {
+  text-align: center;
+  font-size: 34px;
+}
+
+.search-input {
+  border: 0;
+  height: 38px;
+  background: transparent;
+  font-size: 13px;
+  line-height: 110%;
+  padding: 0;
+  box-sizing: border-box;
+  margin: auto;
+  color: #fafafa;
+  width: calc(100% - 133px);
+}
+
+.header-line {
+  border-top: solid;
+  border-width: thin;
+  margin: 16px 0;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 813px) {
+  .header {
+    display: flex;
+  }
+  .active {
+    text-decoration: none;
+  }
+  .logo {
+    text-align: start;
+    width: 80px;
+    background-color: black;
+    padding: 0 23px;
+    height: 100%;
+  }
+  .logo-div {
+    height: 48px;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+  .header-hide {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header-margin {
+    margin: 0;
+    padding: 6px;
+  }
+
+  /* dropdwon */
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .dropdown-product {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    position: fixed;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+
+  .dropdown-product a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-product a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-product {
+    display: block;
+  }
+  .dropbtn-a {
+    color: white;
+  }
+}
